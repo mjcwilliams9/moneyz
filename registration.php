@@ -5,7 +5,7 @@
     <title>Registration</title>
 </head>
 <body>
-+
+
 
 <form action="registration.php">
   <div class="container">
