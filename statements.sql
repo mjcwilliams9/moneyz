@@ -2,7 +2,7 @@ CREATE DATABASE moneyz;
 
 USE moneyz;
 
-CREATE TABLE User(
+CREATE TABLE tblUser(
     Id int NOT NULL AUTO_INCREMENT,
     Username VARCHAR(255) NOT NULL,
     Password VARCHAR(255) NOT NULL,
@@ -11,11 +11,11 @@ CREATE TABLE User(
     PRIMARY KEY (Id)
 );
 
-CREATE TABLE Moneyz(
+CREATE TABLE tblMoneyz(
     Id int NOT NULL AUTO_INCREMENT,
     User_id int NOT NULL,
     Moneyz int NOT NULL,
     PRIMARY KEY (ID),
-    FOREIGN KEY (User_id) REFERENCES User (Id)
+    FOREIGN KEY (User_id) REFERENCES tblUser (Id)
 );
 
